@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+   <link href="footer.css" rel="stylesheet">
+</head>
+<div class="footer-nav">
+    <nav id="footer-navigation" class="" data-content-field="navigation-footer-navigation">
+       <div class="nav">
+          <ul class="cf">
+            <li class=""><a href="/charging-for-rescue" aria-label="No Charge for Rescue">No Charge for Rescue</a></li>
+            <li class=""><a href="/rescue" aria-label="Rescue Assistance">Rescue Assistance</a></li>
+            <li class=""><a href="/contact" aria-label="Contact">Contact</a></li>
+          </ul>
+       </div>
+    </nav>
+ </div>
+ <script type="module">
+    Y.use('node', function() {
+      Y.on('domready', function() {
+        if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) {
+        var move = false;
+        Y.all('.folder-child a').each(function(a) {
+          a.on('touchmove', function()
+          { move = true; }
+          );
+          a.on('touchend', function() {
+            if (move === false)
+            { window.location = a.getAttribute('href'); }
+          });
+        });
+        }
+      });
+    });
+ </script>
+ <footer id="footer" class="cf">
+    <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Left Footer Content" data-type="block-field" data-updated-on="1669807248358" id="footerBlockLeft">
+       <div class="row sqs-row">
+          <div class="col sqs-col-1 span-1">
+             <div class="sqs-block html-block sqs-block-html" data-block-type="2" id="block-yui_3_17_2_2_1433803602475_37668">
+                <div class="sqs-block-content">
+                   <p class="" style="white-space:pre-wrap;">Copyright ©&nbsp;2022 Rocky Mountain Rescue Group, Inc.</p>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="sqs-layout sqs-grid-1 columns-1" data-layout-label="Right Footer Content" data-type="block-field" data-updated-on="1570200727137" id="footerBlockRight">
+       <div class="row sqs-row">
+          <div class="col sqs-col-1 span-1">
+             <div class="sqs-block socialaccountlinks-v2-block sqs-block-socialaccountlinks-v2" data-block-type="54" id="block-yui_3_17_2_1_1570200594200_5513">
+                <div class="sqs-block-content">
+                   <div class="sqs-svg-icon--outer social-icon-alignment-right social-icons-color-black social-icons-size-medium social-icons-style-regular " >
+                      <style>
+                         #block-yui_3_17_2_1_1570200594200_5513 .social-icons-style-border .sqs-svg-icon--wrapper {
+                         box-shadow: 0 0 0 2px inset;
+                         border: none; 
+                         }
+                      </style>
+                      <nav class="sqs-svg-icon--list">
+                         <a href="https://www.facebook.com/rockymountainrescuegroup" target="_blank" class="sqs-svg-icon--wrapper facebook-unauth" aria-label="Facebook">
+                            <div>
+                              <img src="facebook-icon.png" alt="Facebook Icon" style="width:50px; height:50px;"/>
+                            </div>
+                         </a>
+                         <a href="https://www.instagram.com/rockymountainrescuegroup/" target="_blank" class="sqs-svg-icon--wrapper instagram-unauth" aria-label="Instagram">
+                            <div>
+                              <img src="instagram-icon.png" alt="Instagram Icon" style="width:50px; height:50px;"/>
+                            </div>
+                         </a>
+                         <a href="https://twitter.com/rockymtnrescue" target="_blank" class="sqs-svg-icon--wrapper twitter-unauth" aria-label="Twitter">
+                            <div>
+                              <img src="twitter-icon.png" alt="Twitter Icon" style="width:50px; height:50px;"/>
+                            </div>
+                         </a>
+                      </nav>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+ </footer>
+</div>
+
